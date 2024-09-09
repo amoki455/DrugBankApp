@@ -45,6 +45,6 @@ https://github.com/user-attachments/assets/ad4cfc9c-2aa4-4688-b073-14d272f7b53a
 
 To build the DrugBank application, You should first set up Firebase with the Android Studio project. This involves creating a Firebase project in the Firebase Console, adding the necessary Firebase SDK dependencies to the project’s build.gradle files, and configuring the google-services.json file in the app directory.
 
-Once Firebase is set up, you will need to upload the required drug data to Firestore. This can be accomplished using a [This python script](https://github.com/amoki455/DrugBankData). The script should be configured to connect to the Firestore database and upload the drug information in the correct format. You will need to ensure you have the Firebase Admin SDK installed in your Python environment and authenticate using service account credentials.
+Once Firebase is set up, you will need to upload the required drug data to Firestore. This can be accomplished using [This python script](https://github.com/amoki455/DrugBankData). The script should be configured to connect to the Firestore database and upload the drug information in the correct format. You will need to ensure you have the Firebase Admin SDK installed in your Python environment and authenticate using service account credentials.
 
 By following these steps, you can effectively populate the Firestore database with the necessary drug data, enabling the app to retrieve and display the information seamlessly.
