@@ -36,3 +36,11 @@ DrugBank App offers a user-friendly experience with a drug list, detailed drug i
 
 **User Experience:**
 DrugBank App prioritizes user experience with its clean design and intuitive navigation. The app is designed to minimize distractions, allowing users to focus on the information they need. The interactive elements, such as clickable reference numbers and the bottom sheet dialog, enhance engagement and facilitate a deeper understanding of the material.
+
+# Build Instructions
+
+To build the DrugBank application, You should first set up Firebase with the Android Studio project. This involves creating a Firebase project in the Firebase Console, adding the necessary Firebase SDK dependencies to the project’s build.gradle files, and configuring the google-services.json file in the app directory.
+
+Once Firebase is set up, you will need to upload the required drug data to Firestore. This can be accomplished using a [This python script](https://github.com/amoki455/DrugBankData). The script should be configured to connect to the Firestore database and upload the drug information in the correct format. You will need to ensure you have the Firebase Admin SDK installed in your Python environment and authenticate using service account credentials.
+
+By following these steps, you can effectively populate the Firestore database with the necessary drug data, enabling the app to retrieve and display the information seamlessly.
