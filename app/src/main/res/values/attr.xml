@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="referenceOrderColor" format="color"/>
+    <attr name="infoTitleColor" format="color"/>
+    <attr name="linkColor" format="color"/>
+</resources>

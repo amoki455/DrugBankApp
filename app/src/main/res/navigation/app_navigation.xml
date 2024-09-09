@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/app_navigation"
+    app:startDestination="@id/drugsListFragment">
+
+    <fragment
+        android:id="@+id/drugsListFragment"
+        android:name="kishk.ahmedmohamed.drugbank.ui.fragments.drug.DrugsListFragment"
+        android:label="@string/app_name"
+        tools:layout="@layout/fragment_drugs_list" >
+        <action
+            android:id="@+id/action_drugsListFragment_to_drugInfoFragment"
+            app:destination="@id/drugInfoFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <fragment
+        android:id="@+id/drugInfoFragment"
+        android:name="kishk.ahmedmohamed.drugbank.ui.fragments.drugInfo.DrugInfoFragment"
+        tools:layout="@layout/fragment_drug_info" >
+        <argument
+            android:name="drug"
+            app:argType="kishk.ahmedmohamed.drugbank.data.models.DrugListItem$Drug" />
+        <action
+            android:id="@+id/action_drugInfoFragment_to_referencesListDialogFragment"
+            app:destination="@id/referencesListDialogFragment"
+            app:enterAnim="@anim/nav_default_enter_anim"
+            app:exitAnim="@anim/nav_default_exit_anim"
+            app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+            app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    </fragment>
+    <dialog
+        android:id="@+id/referencesListDialogFragment"
+        android:name="kishk.ahmedmohamed.drugbank.ui.fragments.references.ReferencesDialogFragment"
+        android:label="fragment_references_list_dialog"
+        tools:layout="@layout/fragment_references_dialog" >
+        <argument
+            android:name="drugId"
+            app:argType="string" />
+        <argument
+            android:name="highlightReferenceId"
+            app:argType="string"
+            app:nullable="true"
+            android:defaultValue="@null" />
+    </dialog>
+</navigation>

@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">DrugBank</string>
+    <string name="drugs_list">Drugs list</string>
+    <string name="references">References</string>
+    <string name="no_items">No available items</string>
+    <string name="reload">Reload</string>
+</resources>

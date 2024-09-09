@@ -1,0 +1,13 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Base.Theme.DrugBank" parent="Theme.Material3.DayNight.NoActionBar">
+        <!-- Customize your dark theme here. -->
+        <item name="colorPrimary">@color/primary</item>
+        <item name="colorSecondary">@color/secondary</item>
+        <item name="referenceOrderColor">#FF9800</item>
+        <item name="infoTitleColor">#FF9800</item>
+        <item name="linkColor">#BB00FFFF</item>
+        <item name="snackbarTextViewStyle">@style/MaterialSnackbarTextViewTheme</item>
+        <item name="colorControlNormal">@android:color/white</item>
+    </style>
+</resources>

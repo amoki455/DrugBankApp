@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:backgroundTintMode="add"
+    android:padding="@dimen/text_margin">
+
+    <TextView
+        android:id="@+id/info_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:textAlignment="textStart"
+        android:textAppearance="?attr/textAppearanceListItem"
+        android:textColor="?attr/infoTitleColor"
+        tools:text="Background" />
+
+    <TextView
+        android:id="@+id/details"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="6dp"
+        android:gravity="left"
+        android:textColorLink="?attr/linkColor"
+        android:textAlignment="textStart"
+        android:textAppearance="?attr/textAppearanceListItemSecondary"
+        tools:text="Gentamicin is an aminoglycoside used to treat a wide variety of aerobic infections in the body. Gentamicin is an aminoglycoside used to treat a wide variety of aerobic infections in the body. Gentamicin is an aminoglycoside used to treat a wide variety of aerobic infections in the body." />
+
+</LinearLayout>
